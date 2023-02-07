@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import Dashboard from './Dashboard'
 import Header from './Header'
 import AboutMe from './AboutMe'
@@ -10,15 +10,17 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Route exact path="/">
-        <Dashboard />
-      </Route>
-      <Route exact path="/about-me">
-        <AboutMe />
-      </Route>
-      <Route exact path="/reviews">
-        <Reviews />
-      </Route>
+      <Switch>
+        <Route exact path="/">
+          <Dashboard />
+        </Route>
+        <Route path="/reviews">
+          <Reviews />
+        </Route>
+        <Route path="/about-me">
+          <AboutMe />
+        </Route>
+      </Switch>
     </div>
   )
 }
