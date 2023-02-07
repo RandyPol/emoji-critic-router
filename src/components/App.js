@@ -10,13 +10,13 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Route path="/">
+      <Route exact path="/">
         <Dashboard />
       </Route>
-      <Route path="/about-me">
+      <Route exact path="/about-me">
         <AboutMe />
       </Route>
-      <Route path="/reviews">
+      <Route exact path="/reviews">
         <Reviews />
       </Route>
     </div>
