@@ -11,7 +11,7 @@ function AboutMe() {
   const { path, url } = useRouteMatch()
 
   return (
-    <div>
+    <div className="about-me">
       <ul className="links">
         <li>
           <Link to={`${url}/my-story`}>My Story</Link>
