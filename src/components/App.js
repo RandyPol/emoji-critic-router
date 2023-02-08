@@ -4,6 +4,7 @@ import Dashboard from './Dashboard'
 import Header from './Header'
 import AboutMe from './AboutMe'
 import Reviews from './Reviews'
+import AboutUs from './AboutUs'
 import './App.css'
 
 function App() {
@@ -20,9 +21,18 @@ function App() {
         <Route path="/about-me">
           <AboutMe />
         </Route>
+        <Route path="/about-us">
+          <AboutUs />
+        </Route>
       </Switch>
     </div>
   )
 }
 
 export default App
+
+{
+  /* <Route path="/about-us">
+<AboutUs />
+</Route> */
+}

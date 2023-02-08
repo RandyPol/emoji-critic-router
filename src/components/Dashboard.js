@@ -2,6 +2,7 @@
 
 import React from 'react'
 import './Dashboard.css'
+import { Link } from 'react-router-dom'
 
 function Dashboard() {
   return (
@@ -9,6 +10,7 @@ function Dashboard() {
       <h1>Emoji Critic — All About Emojis</h1>
       <p>
         The #1 Destination for Emoji Reviews on the World Wide Web Since 2020!
+        <Link to='/reviews'>Click here to see my latest reviews!</Link>
       </p>
     </div>
   )
