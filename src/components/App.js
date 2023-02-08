@@ -2,9 +2,9 @@ import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Dashboard from './Dashboard'
 import Header from './Header'
-import AboutMe from './AboutMe'
+import AboutMe from './about-me/AboutMe'
 import Reviews from './Reviews'
-import AboutUs from './AboutUs'
+import AboutUs from './about-us/AboutUs'
 import './App.css'
 
 function App() {
@@ -30,9 +30,3 @@ function App() {
 }
 
 export default App
-
-{
-  /* <Route path="/about-us">
-<AboutUs />
-</Route> */
-}
